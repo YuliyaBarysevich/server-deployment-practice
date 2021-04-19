@@ -20,7 +20,7 @@ describe('API Server', () => {
   it('/works', async () => {
     const response = await request.get('/');
     expect(response.status).toEqual(200);
-    expect(response.text).toEqual('Hello New York');
+    expect(response.text).toEqual('Hello World');
   })
 
   it('data works', async () => {

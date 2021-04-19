@@ -8,7 +8,7 @@ const errorHandler = require('./handlers/500.js');
 const stamper = require('./middleware/stamper.js')
 
 app.get('/', stamper, (req,res) => {
-  res.status(200).send('Hello New York')
+  res.status(200).send('Hello World')
 })
 
 app.get('/data', stamper, (req, res) => {
