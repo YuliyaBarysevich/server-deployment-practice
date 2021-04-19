@@ -1,4 +1,5 @@
-'use strict'
+
+'use strict';
 
 module.exports = (error, req, res, next) => {
   res.status(500).send({
@@ -7,6 +8,5 @@ module.exports = (error, req, res, next) => {
     query: req.query,
     body: req.body,
     message: `SERVER ERROR: ${error.message}`
-
   })
 }
